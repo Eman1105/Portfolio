@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,22 +7,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class ="site-header">
-        <div class="container header-content">
-            <a class =" logo" herf="index.html">Eman</a>
 
-            <nav class=" main-nav" aria-label = " Huvudnavigation">
+    <header class ="site-header">
+        <nav class="Container main-nav" aria-label = " Huvudnavigation">
+                <a class =" logo" herf="index.html">Eman</a>
+
+            <section class="nav-links"></section>
                 <a herf= "index.html">Hem</a> 
                 <a href= "om-mig.html">Om mig</a>
                 <a href= "projekt.html">Projekt</a>
                 <a href= "kontakt.html">Kontakt</a>
-            </nav>
-        </div> 
+            </section>
+        </nav>
+       
     </header>
 
     <main>
         <section class="page-heading">
-            <div class="container">
+            <article class="container">
                 <p class="small-title">OM MIG</p>
                 <h1>Om mig</h1>
 
@@ -30,12 +32,13 @@
                     Här kan du läsa mer om min utbildning,
                     mina kunskaper och mitt intresse för teknik.
                 </p>
-            </div>
+            </article>
         </section>
 
         <section class=" about">
-            <div class =" container about-grid">
-                <article>
+
+            <article class =" container about-grid">
+                <section>
                     <h2>Vem är jag?</h2>
 
                     <p>
@@ -54,10 +57,12 @@
                         fått utveckla mina kunskaper och lära mig
                         att lösa olika problem.   
                     </p>
-                </article>
+                </section>
 
-                <article class="skilla-box">
+                <aside class="skills-box">
+
                     <h2>Mina egenskaper</h2>
+
                     <li>HTML</li>
                     <li>CSS</li>
                     <li>JavaScript</li>
@@ -67,15 +72,15 @@
                     <li>Visual Studio Code</li>
                     <ul class ="skills-list">
                     </ul>
-                </article> 
-            </div>
+                </aside> 
+            </article>
         </section>
     </main>
 
     <footer>
-        <div class="container">
+        
             <p> &copy; 2026 Eman Malik</p>
-        </div>
+       
     </footer>
 
 </body>

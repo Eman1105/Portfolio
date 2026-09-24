@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,35 +7,39 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="site header">
-        <div class=" container header-content">
+
+    <header class="site-header">
+
+        <nav class=" container main-nav" aria aria-label="Huvudnavigation">
+       
             <a class ="logo" href="index.html">Eman</a>
-            <nav class="main-nav" aria aria-label="Huvudnavigation">
+
+            <section class ="nav-links">
                 <a herf= "index.html">Hem</a> 
                 <a herf= "om-mig.html">Om Mig </a>
                 <a herf= "projekt.html">Projekt</a>
                 <a herf= "kontakt.html">Kontakt</a>
-            </nav>
-        </div>
+            </section>
+        </nav>
+        
     </header>
 
     <main>
+
         <section class= "page-heading">
-            <div class="container">
+            <article class="container">
                 <p class="small-title">KONTAKT</p>
                 <h1> Kontakta mig</h1>
                 <p>
-                    Här hittar du mina kontakter
+                    Här hittar du mina kontakt uppgifter.
                 </p>
-            </div>
+            </article>
         </section>
 
         <section class="kontakt">
-            <div class="container about-grid">
+            <article class="container about-grid">
                 <section class="kontakt Info">
-                    <h2> 
-                        Hör av dig
-                    </h2>
+                    <h2>  Hör av dig </h2>
 
                     <p>
                         Om du vill kontakta mig kan du använda
@@ -46,14 +50,59 @@
                         <img
                         src="https://images.pexels.com/photos/1181673/pexels-photo-1181673.jpeg"
                             alt="Person som arbetar vid datorer med programmering"
-                            >
-                            <section class="contact-links">
-                                
-                            </section>
+                           >
                     </figure>
+                    
+                     <section class="contact-links">
+                        <p>
+                            <strong>GitHub:</strong>
+                            <a
+                                href="https://github.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                        </p>
+                        <p>
+                            <strong>E-post:</strong>
+                            <a herf = "mailto:dinmail@example.com"
+                            emanmalik.elev.ntig@gmail.com
+                            >
+                        </p>
+                     </section>
                 </section>
-            </div>
+                
+                <from>
+                    <h2> Skicka ett meddelande</h2>
+                    <p class ="form-group">
+                        <label for="name">Name</label>
+                        <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        required
+                        >
+                    </p>
+
+                    <p class="form-group">
+                        <label for ="message">Meddelande</label>
+                        
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="6"
+                    ></textarea>
+                    </p>
+
+                    <button type="submit">
+                        Skicka
+                    </button>
+                </from>
+            </article>
         </section>
     </main>
+
+    <footer>
+        <p>&copy; 2026 Eman Malik</p>
+    </footer>
 </body>
 </html>
