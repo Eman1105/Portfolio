@@ -10,16 +10,16 @@
 
     <header class="site-header">
 
-        <nav class=" container main-nav" aria aria-label="Huvudnavigation">
+        <nav class=" container main-nav" aria-label="Huvudnavigation">
        
             <a class ="logo" href="index.html">Eman</a>
 
-            <section class ="nav-links">
-                <a herf= "index.html">Hem</a> 
-                <a herf= "om-mig.html">Om Mig </a>
-                <a herf= "projekt.html">Projekt</a>
-                <a herf= "kontakt.html">Kontakt</a>
-            </section>
+            <div class ="nav-links">
+                <a herf="index.html">Hem</a> 
+                <a herf="om-mig.html">Om Mig </a>
+                <a herf="projekt.html">Projekt</a>
+                <a herf="kontakt.html">Kontakt</a>
+            </div>
         </nav>
         
     </header>
@@ -27,19 +27,19 @@
     <main>
 
         <section class= "page-heading">
-            <article class="container">
+            <div class="container">
                 <p class="small-title">KONTAKT</p>
                 <h1> Kontakta mig</h1>
                 <p>
                     Här hittar du mina kontakt uppgifter.
                 </p>
-            </article>
+            </div>
         </section>
 
         <section class="kontakt">
-            <article class="container about-grid">
-                <section class="kontakt Info">
-                    <h2>  Hör av dig </h2>
+            <div class="container about-grid">
+                <article class= "kontakt_info">
+                    <h2>Hör av dig</h2>
 
                     <p>
                         Om du vill kontakta mig kan du använda
@@ -53,7 +53,7 @@
                            >
                     </figure>
                     
-                     <section class="contact-links">
+                     <div class="contact-links">
                         <p>
                             <strong>GitHub:</strong>
                             <a
@@ -61,18 +61,21 @@
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
+                            Min GitHub
+                            </a>
                         </p>
+
                         <p>
                             <strong>E-post:</strong>
-                            <a herf = "mailto:dinmail@example.com"
+                            <a herf = "mailto:dinmail@example.com">
                             emanmalik.elev.ntig@gmail.com
-                            >
+                            </a>
                         </p>
-                     </section>
-                </section>
+                     </div>
+                </article>
                 
                 <from>
-                    <h2> Skicka ett meddelande</h2>
+                    <h2>Skicka ett meddelande</h2>
                     <p class ="form-group">
                         <label for="name">Name</label>
                         <input
@@ -81,6 +84,19 @@
                         name="name"
                         required
                         >
+                    </p>
+
+                    <p class="form-group">
+
+                        <label for="email">E-post</label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            required
+                        >
+
                     </p>
 
                     <p class="form-group">
@@ -96,8 +112,9 @@
                     <button type="submit">
                         Skicka
                     </button>
+                    
                 </from>
-            </article>
+            </div>
         </section>
     </main>
 
