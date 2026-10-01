@@ -65,3 +65,287 @@ p{
 }
 
 /*HERO*/
+
+.hero{
+    padding: 4rem 0;
+    background-color:#e8e8e8 ;
+}
+
+.hero-content{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.hero-text{
+    max-width: 659px;
+}
+
+.small-title{
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.hero h1{
+    font-size: 2.5rem;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+}
+.hero-image img{
+    width:100%;
+    border-radius: 8px;
+}
+
+/*knapp*/
+.button,
+button{
+    display:inline-block;
+    padding:0.8rem 1.2rem ;
+    border: 2px solid #222;
+    background-color: #222;
+    color: white;
+    text-decoration: none;
+    cursor:pointer;
+    font: inherit;
+}
+
+.button:hover,
+button:hover{
+    background-color: #555;
+}
+
+.button:focus,
+button:focus{
+    outline: 3px solid #777;
+    outline-offset: 3px;
+}
+
+/*intro*/
+.intro{
+    padding: 4rem 0;
+    background-color: white;
+}
+
+.intro p{
+    max-width: 700px;
+}
+
+/* page-heading*/
+
+.page-heading{
+    padding:3rem 0;
+    background-color: #e8e8e8;
+}
+.page-heading p:last-child{
+    max-width: 650px;
+    margin-bottom: 0;
+}
+
+/*Om mig*/
+
+.about{
+    padding: 4rem 0;
+    background-color: white;
+}
+
+.about-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.skills-box{
+    padding: 1.5rem;
+    background-color: #f1f1f1;
+    border:1px solid #ddd;
+}
+
+.skills-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+    list-style: none;
+    padding: 0;
+}
+
+.skills-list li{
+    padding: 0.5rem 0.8rem;
+    background-color: white;
+    border:1px solid #ccc;
+}
+
+.projekt{
+    padding: 4rem 0;
+}
+
+.projekt-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.projekt-card{
+    padding:1.5rem;
+    background-color: white;
+    border: 1pr solid #ddd;
+}
+
+.projekt-card:hover{
+    transform: translate(-3px);
+}
+   
+.projekt-number{
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.tecnology{
+    font-size:0.9rem;
+    font-weight:bold;
+}
+
+/*kontakt*/
+
+.contact{
+    padding: 4rem 0;
+    background-color: white;
+}
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:2rem;
+}
+
+.contact-info img{
+    width: 100%;
+    border-radius: 8px;
+}
+
+.contacts-links{
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem;
+}
+
+.contact-links p { 
+    margin: 0;
+}
+
+.contact-links a{
+    overflow-wrap: anywhere;
+}
+
+.contacts-links a:hover{
+    text-decoration: none;
+}
+
+.contact-links a:focus{
+    outline:3px solid #555;
+    outline-offset: 3px;
+}
+
+/*formulär*/
+
+.form{
+    width:100%;
+    max-width: 600px; 
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.form-group label{
+    margin-bottom:0.4rem;
+    font-weight: bold;
+}
+
+input,
+textarea{
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px sold #999;
+    font: inherit;   
+}
+
+.textarea{
+    resize: vertical;
+}
+
+input:focus,
+textarea:focus{
+    outline: 3px solid #777;
+    border-color: #222;
+}
+
+/*footer*/
+footer{
+    padding: 2rem 0;
+    background-color: #222;
+    color: white;
+    text-align: center;
+}
+
+/*break point700px*/
+
+/*
+   Navigationen får plats på en rad.
+   Projekt och kontakt kan använda två kolumner.
+*/
+
+@media (min-width:700px) {
+    .main-nav{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .nav-links{
+        flex-direction: row;
+    }
+    .projekt-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .about-grid{
+        grid-template-columns: repeat(2fr 1fr);
+    }
+    .contact-links{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+}
+
+/*breakpoint 900px*/
+
+/*
+   Det finns tillräckligt med plats för
+   text och bild bredvid varandra.
+*/
+
+@media (min-width: 900px) {
+    .hero{
+        padding: 6rem 0;
+    }
+    .hero-content{
+        grid-template-columns: 1.1fr 0.9fr;
+    }
+    .hero h1{
+        font-size: 3.5rem;
+    }
+}
+
+/*breakpoint 1050px*/
+
+/*
+   Projektkorten har tillräckligt med plats
+   för tre kolumner.
+*/
+
+@media (min-width: 1050px) {
+    .projekt-grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
