@@ -2,9 +2,9 @@
     box-sizing: border-box;
 }
 body {
-    margin: 0;
+    margin: 3;
     font-family: Arial, sans-serif;
-    line-height: 1,6;
+    line-height: 2;
     background-color:#f5f5f5;
     color: #222;
 }
@@ -22,7 +22,7 @@ a{
 h1,
 h2,
 p{
-    margin-top: 0;
+    margin-top: 3;
 }
 
 /* CONTAINER*/
@@ -175,6 +175,7 @@ button:focus{
     background-color: white;
     border:1px solid #ccc;
 }
+/*projekt*/
 
 .projekt{
     padding: 4rem 0;
@@ -183,13 +184,13 @@ button:focus{
 .projekt-grid{
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 2rem;
 }
 
 .projekt-card{
-    padding:1.5rem;
+    padding: 2rem;
     background-color: white;
-    border: 1pr solid #ddd;
+    border: 2pr solid #ddd;
 }
 
 .projekt-card:hover{
@@ -197,7 +198,7 @@ button:focus{
 }
    
 .projekt-number{
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: bold;
 }
 
