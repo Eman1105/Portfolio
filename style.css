@@ -36,8 +36,8 @@ p{
 /*HEADER*/
 
 .site-header{
-    border: white;
-    border-bottom: 1px solid #ddd;
+    background-color: #222;
+    color: white;
 }
 
 .main-nav{
@@ -49,17 +49,31 @@ p{
 }
 
 .logo{
+    color: white;
     font-size: 1.5rem;
     font-weight: bold;
     text-decoration: none;
 }
 
 .nav-links{
-    padding:0.4rem 0.6rem ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nav-links a{
+    color: white;
+    padding: 0.4rem 0.6rem;
     text-decoration: none;
 }
 
-.nav-links a:focus{
+.nav-links a:hover{
+    text-decoration: underline;
+}
+
+.nav-links a:focus
+.logo:focus{
     outline: 3px solid #555;
     outline-offset: 3px;
 }
@@ -176,37 +190,75 @@ button:focus{
     border:1px solid #ccc;
 }
 /*projekt*/
-
-.projekt{
-    padding: 4rem 0;
+project-heading{
+    padding: 5rem 0 3rem;
+    text-align: center;
+    background-color: white;
 }
 
-.projekt-grid{
+.project-heading h1{
+    margin-bottom: 1rem 0 3rem;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+.project-heading p:last-child{
+    max-width: 600px;
+    margin:0 auto;
+}
+
+.projects{
+    padding: 2rem 0 5rem;
+    background-color: white;
+}
+
+.project-grid{
     display: grid;
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 3rem 1.5rem;
 }
 
-.projekt-card{
-    padding: 2rem;
-    background-color: white;
-    border: 2pr solid #ddd;
+.project-card{
+    margin: 0;
+    overflow: hidden;
 }
 
-.projekt-card:hover{
-    transform: translate(-3px);
+.project-card img{
+    width:100%;
+    aspect-ratio: 4 / 3;
+    object-fit:cover;
+    transition:transformation 0.3sease;
 }
-   
-.projekt-number{
-    font-size: 1rem;
+
+.project-card:hover img{
+    transform: scale(1.03);
+}
+
+.project-info{
+    padding-top: 1rem;
+}
+
+.project-number{
+    margin-bottom:0.3rem;
+    font-size: 0,75rem;
+    letter-spacing: 1px;
     font-weight: bold;
 }
 
-.tecnology{
-    font-size:0.9rem;
-    font-weight:bold;
+.project info h2{
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
 }
 
+.project-info p{
+    max-width: 450px;
+}
+
+.tecnology{
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
 /*kontakt*/
 
 .contact{
@@ -306,16 +358,21 @@ footer{
     .nav-links{
         flex-direction: row;
     }
-    .projekt-grid{
+    .project-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+
     .about-grid{
         grid-template-columns: repeat(2fr 1fr);
     }
+    .contact-grid{
+        grid-template-columns: repeat(1fr 1fr);
+    }
+
     .contact-links{
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 1.5rem;
+        gap:1.5rem
     }
 }
 
